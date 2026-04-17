@@ -1,4 +1,11 @@
 import { useState } from 'react';
+import royalJelly1000 from '../assets/royal-jelly-1000mg.png';
+import royalJelly1500 from '../assets/royal-jelly-1500mg.png';
+import royalJellyCapsule from '../assets/royal-jelly-capsule.avif';
+import royalJellyEff from '../assets/royal-jelly-effervescent.avif';
+import astaxanthin from '../assets/astaxanthin.avif';
+import fishOil from '../assets/fish-oil.avif';
+import propolis from '../assets/propolis-toothpaste.avif';
 import './Products.css';
 
 const products = [
@@ -9,8 +16,7 @@ const products = [
     category: 'Royal Jelly',
     description: 'Our best-selling Royal Jelly formula. Packed with naturally occurring vitamins, minerals, and amino acids to support energy, immunity, and skin vitality.',
     benefits: ['Energy & vitality', 'Immune support', 'Skin health'],
-    icon: '👑',
-    color: '#f5e6c8',
+    image: royalJelly1000,
   },
   {
     id: 2,
@@ -19,8 +25,7 @@ const products = [
     category: 'Royal Jelly',
     description: 'The same premium Royal Jelly formula in a convenient starter size — perfect for those new to the Nature\'s King range.',
     benefits: ['Energy & vitality', 'Immune support', 'Skin health'],
-    icon: '👑',
-    color: '#f5e6c8',
+    image: royalJellyCapsule,
   },
   {
     id: 3,
@@ -29,8 +34,7 @@ const products = [
     category: 'Royal Jelly',
     description: 'Our high-strength Royal Jelly for those seeking extra potency. Ideal for adults wanting maximum support from this superb natural product.',
     benefits: ['High-strength formula', 'Hormonal balance', 'Anti-aging'],
-    icon: '✨',
-    color: '#f5e6c8',
+    image: royalJelly1500,
   },
   {
     id: 4,
@@ -39,8 +43,7 @@ const products = [
     category: 'Royal Jelly',
     description: 'A refreshing effervescent tablet combining Royal Jelly with Vitamin C. Dissolves quickly for fast absorption and a delicious citrus taste.',
     benefits: ['Fast absorption', 'Immune boost', 'Antioxidant'],
-    icon: '💧',
-    color: '#e8f4e8',
+    image: royalJellyEff,
   },
   {
     id: 5,
@@ -49,8 +52,7 @@ const products = [
     category: 'Antioxidant',
     description: 'One of the most powerful natural antioxidants. Our Astaxanthin mini capsules support eye health, skin protection, and reduce oxidative stress.',
     benefits: ['Powerful antioxidant', 'Eye & skin health', 'Anti-inflammatory'],
-    icon: '🔴',
-    color: '#fde8e8',
+    image: astaxanthin,
   },
   {
     id: 6,
@@ -59,8 +61,7 @@ const products = [
     category: 'Omega-3',
     description: 'Premium Fish Oil enriched with Vitamin D3 in convenient mini capsules. Supports heart health, brain function, and strong bones.',
     benefits: ['Heart health', 'Brain function', 'Bone strength'],
-    icon: '🐟',
-    color: '#e8f0fe',
+    image: fishOil,
   },
   {
     id: 7,
@@ -69,8 +70,7 @@ const products = [
     category: 'Oral Care',
     description: 'A natural toothpaste enriched with Australian Propolis. Provides antibacterial protection, supports gum health, and leaves your mouth feeling fresh.',
     benefits: ['Antibacterial', 'Gum health', 'Fresh breath'],
-    icon: '🍯',
-    color: '#fff8e1',
+    image: propolis,
   },
 ];
 
@@ -110,8 +110,8 @@ const Products = () => {
       <div className="products-grid">
         {filtered.map(product => (
           <div key={product.id} className="product-card">
-            <div className="product-icon-wrapper" style={{ background: product.color }}>
-              <span className="product-icon">{product.icon}</span>
+            <div className="product-image-wrapper">
+              <img src={product.image} alt={product.name} className="product-image" />
               <span className="product-category-tag">{product.category}</span>
             </div>
             <div className="product-body">

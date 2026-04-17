@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,8 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand" onClick={() => scrollTo('hero')}>
-        <span className="brand-natures">Nature's</span>
-        <span className="brand-king">King</span>
+        <img src={logo} alt="Nature's King" className="navbar-logo" />
       </div>
 
       <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">

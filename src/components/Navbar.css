@@ -15,21 +15,15 @@
 }
 
 .navbar-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
 }
 
-.brand-natures {
-  color: #2c2c2c;
-  font-weight: 400;
-}
-
-.brand-king {
-  color: #c9a84c;
-  font-weight: 700;
-  margin-left: 4px;
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar-links {
