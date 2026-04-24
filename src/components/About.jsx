@@ -24,9 +24,7 @@ const About = () => {
           </p>
           <p className="about-text">
             Every product in our range is crafted under strict GMP (Good Manufacturing Practice)
-            standards, using premium natural ingredients sourced responsibly. From Royal Jelly
-            harvested from pristine Australian apiaries to potent Astaxanthin — we bring
-            nature's best to your daily routine.
+            standards, using premium natural ingredients sourced responsibly.
           </p>
 
           <div className="about-stats">
