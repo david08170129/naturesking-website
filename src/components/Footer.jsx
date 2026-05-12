@@ -63,15 +63,11 @@ const Footer = () => {
             <span className="contact-icon">✉️</span>
             <a href="mailto:info@aunew.com">info@aunew.com</a>
           </div>
-          <div className="contact-item">
-            <span className="contact-icon">🌐</span>
-            <a href="https://www.aunew.com" target="_blank" rel="noopener noreferrer">www.aunew.com</a>
-          </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Nature's King. All rights reserved. A brand by Aunew Group.</p>
+        <p>&copy; {new Date().getFullYear()} Nature's King. All rights reserved. A brand by Aunew Australia Pty Ltd.</p>
         <p className="footer-made">
           <img className="footer-flag" src={`${import.meta.env.BASE_URL}australia-flag.svg`} alt="" aria-hidden="true" />
           <span>Made in Australia</span>
