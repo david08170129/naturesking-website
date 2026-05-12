@@ -37,11 +37,6 @@ const About = () => {
               <span className="stat-number">7+</span>
               <span className="stat-label">Premium Products</span>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Natural Ingredients</span>
-            </div>
           </div>
         </div>
       </div>
@@ -58,7 +53,9 @@ const About = () => {
           <p>Formulations guided by research and manufactured to GMP standards.</p>
         </div>
         <div className="value-card">
-          <div className="value-icon">🇦🇺</div>
+          <div className="value-icon value-icon-flag">
+            <img className="value-flag" src={`${import.meta.env.BASE_URL}australia-flag.svg`} alt="" aria-hidden="true" />
+          </div>
           <h3>Australian Made</h3>
           <p>Proudly manufactured in Australia with world-class quality control.</p>
         </div>

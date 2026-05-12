@@ -94,11 +94,6 @@
   width: 100%;
 }
 
-.crown-icon {
-  font-size: 3rem;
-  margin-bottom: 0.8rem;
-}
-
 .main-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
@@ -154,6 +149,15 @@
 
 .side-card span {
   font-size: 1.5rem;
+}
+
+.side-card-flag {
+  width: 1.5rem;
+  height: 1rem;
+  display: block;
+  object-fit: contain;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .side-card p {

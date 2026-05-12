@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-overlay"></div>
       <div className="hero-content">
-        <p className="hero-tagline-top">Australian Natural Supplements</p>
+        <p className="hero-tagline-top">Australian Supplements</p>
         <h1 className="hero-title">
           Nature's <span>King</span>
         </h1>
@@ -24,11 +24,7 @@ const Hero = () => {
         </div>
         <div className="hero-badges">
           <div className="badge">
-            <span className="badge-icon">🌿</span>
-            <span>100% Natural</span>
-          </div>
-          <div className="badge">
-            <span className="badge-icon">🇦🇺</span>
+            <img className="badge-flag" src={`${import.meta.env.BASE_URL}australia-flag.svg`} alt="" aria-hidden="true" />
             <span>Made in Australia</span>
           </div>
           <div className="badge">

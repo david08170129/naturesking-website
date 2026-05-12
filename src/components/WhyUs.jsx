@@ -48,7 +48,6 @@ const WhyUs = () => {
 
         <div className="whyus-visual">
           <div className="visual-card main-card">
-            <div className="crown-icon">👑</div>
             <h3>Nature's King</h3>
             <p className="visual-tagline">Feel Like Gold</p>
             <div className="visual-stats">
@@ -67,7 +66,7 @@ const WhyUs = () => {
             </div>
           </div>
           <div className="visual-card side-card">
-            <span>🌿</span>
+            <img className="side-card-flag" src={`${import.meta.env.BASE_URL}australia-flag.svg`} alt="" aria-hidden="true" />
             <p>Australian Made</p>
           </div>
           <div className="visual-card side-card bottom">

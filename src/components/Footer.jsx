@@ -72,7 +72,10 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Nature's King. All rights reserved. A brand by Aunew Group.</p>
-        <p className="footer-made">Made in Australia 🇦🇺</p>
+        <p className="footer-made">
+          <img className="footer-flag" src={`${import.meta.env.BASE_URL}australia-flag.svg`} alt="" aria-hidden="true" />
+          <span>Made in Australia</span>
+        </p>
       </div>
     </footer>
   );

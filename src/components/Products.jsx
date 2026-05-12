@@ -87,10 +87,10 @@ const Products = () => {
     <section id="products" className="products">
       <div className="products-header">
         <p className="section-label">Our Range</p>
-        <h2 className="section-title">Premium Natural Products</h2>
+        <h2 className="section-title">Premium Products</h2>
         <div className="gold-divider centered"></div>
         <p className="products-intro">
-          Every Nature's King product is formulated with premium natural ingredients,
+          Every Nature's King product is formulated with premium ingredients,
           rigorously tested and proudly made in Australia.
         </p>
       </div>
