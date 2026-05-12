@@ -21,7 +21,7 @@ const products = [
   {
     id: 2,
     name: 'Royal Jelly 1000mg',
-    size: '120 Capsules',
+    size: '90 Mini Capsules',
     category: 'Royal Jelly',
     description: 'The same premium Royal Jelly formula in a convenient starter size — perfect for those new to the Nature\'s King range.',
     benefits: ['Energy & vitality', 'Immune support', 'Skin health'],
